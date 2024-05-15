@@ -166,7 +166,7 @@ export function DataTableDemo() {
           <Dialog>
             <DialogTrigger asChild>
               <Button variant="outline" className="ml-auto">
-                Create Payment Link
+                Payment Link
               </Button>
             </DialogTrigger>
             <DialogContent className="sm:max-w-[425px]">
