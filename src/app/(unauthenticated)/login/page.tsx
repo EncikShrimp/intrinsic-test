@@ -51,7 +51,7 @@ export default function Login() {
     if (user) {
       router.push("/dashboard");
     }
-  }, [localStorage.getItem("user")]);
+  }, []);
 
   return (
     <main className="w-screen h-screen flex items-center justify-center">
@@ -90,7 +90,7 @@ export default function Login() {
             </div>
           </form>
           <div className="mt-4 flex items-center">
-            <p>Don't have an account? </p>{" "}
+            <p>Don&apos;t have an account? </p>{" "}
             <Button
               className="text-blue-500"
               variant="link"

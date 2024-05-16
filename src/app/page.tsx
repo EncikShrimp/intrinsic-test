@@ -11,7 +11,7 @@ export default function Home() {
     if (!user) {
       router.push("/login");
     }
-  }, [localStorage.getItem("user")]);
+  }, []);
   return (
     <main className="dark flex min-h-screen flex-col items-center justify-between p-24">
       HOME

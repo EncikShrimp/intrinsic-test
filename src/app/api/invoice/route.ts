@@ -34,7 +34,7 @@ export async function POST(req: NextApiRequest, res: NextApiResponse) {
   }
 }
 
-export async function GET(req: NextApiRequest, res: NextApiResponse) {
+export async function GET() {
   try {
     await connectDB();
     // Validate request body

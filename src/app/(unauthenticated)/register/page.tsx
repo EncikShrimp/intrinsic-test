@@ -50,7 +50,7 @@ export default function Register() {
     if (user) {
       router.push("/dashboard");
     }
-  }, [localStorage.getItem("user")]);
+  }, []);
 
   return (
     <main className="w-screen h-screen flex flex-col items-center justify-center">

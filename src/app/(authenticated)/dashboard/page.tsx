@@ -65,7 +65,7 @@ export default function Dashboard() {
     if (!user) {
       router.push("/login");
     }
-  }, [localStorage.getItem("user")]);
+  }, []);
 
   return (
     <main className="dark flex min-h-screen flex-col items-center px-24 py-12 ">
