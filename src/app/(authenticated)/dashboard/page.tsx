@@ -54,6 +54,7 @@ export default function Dashboard() {
 
       const { data } = await response.json();
       data && alert("Successfully create invoice.");
+      window.location.reload();
     } catch (error) {
       console.error(error);
       alert("Invoice failed to be create.");
@@ -180,6 +181,15 @@ export default function Dashboard() {
             <DataTableDemo />
           </CardContent>
         </Card>
+        <Button
+          onClick={() => {
+            localStorage.clear();
+            window.location.reload();
+          }}
+          variant="outline"
+        >
+          Logout
+        </Button>
       </div>
     </main>
   );

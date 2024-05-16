@@ -6,6 +6,7 @@ import {
   ChevronDownIcon,
   CopyIcon,
   DotsHorizontalIcon,
+  ReloadIcon,
 } from "@radix-ui/react-icons";
 import {
   ColumnDef,
@@ -264,6 +265,13 @@ export function DataTableDemo() {
             </SelectGroup>
           </SelectContent>
         </Select>
+        <Button
+          variant="outline"
+          onClick={() => fetchInvoices()}
+          className="ml-2"
+        >
+          <ReloadIcon />
+        </Button>
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
             <Button variant="outline" className="ml-auto">
